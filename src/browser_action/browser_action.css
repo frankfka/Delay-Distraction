@@ -1,0 +1,26 @@
+html {
+  font-family: 'Roboto', sans-serif;
+  border: none;
+}
+
+body {
+  padding: 20px;
+  background: black !important;
+}
+
+#enable-btn {
+  background-color: orange;
+}
+
+.btn {
+  white-space: nowrap;
+}
+
+.popup-content {
+  text-align: center;
+}
+
+#configure-btn {
+  margin-top: 10px;
+  font-size: 12px !important;
+}

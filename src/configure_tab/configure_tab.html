@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+        crossorigin="anonymous">
+  <link rel="stylesheet" href="configure_tab.css"/>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+
+  <title>Configure DelayDistraction</title>
+</head>
+<body>
+<div class="header">
+  <h1 class="header-title">Configure</h1>
+  <br>
+  <p>The extension will match any links that match all or part of phrases entered below.</p>
+  <p>For example, "facebook" will result in added load times to "www.facebook.com" and
+    "facebook.com/example_link"</p>
+</div>
+<div class="configure-body">
+  <table class="table table-borderless">
+    <thead>
+    <tr>
+      <th scope="col" class="entry-col">Entry</th>
+      <th scope="col" class="delay-col">Delay (s)</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!--    Editable Row for New Entry-->
+    <tr id="new-entry-row">
+      <td>
+        <div class="row">
+          <input id="new-entry-val"
+                 type="text"
+                 class="form-control"
+                 placeholder="facebook.com">
+        </div>
+      </td>
+      <td>
+        <div class="row">
+          <div class="col">
+            <input id="new-entry-delay"
+                   type="number"
+                   class="form-control"
+                   placeholder="5">
+          </div>
+          <button class="btn btn-outline-success btn-small add">Add</button>
+        </div>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script src="../common.js" type="module"></script>
+<script src="configure_tab.js" type="module"></script>
+</body>
+</html>

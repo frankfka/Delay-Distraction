@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "DelayDistraction",
+  "version": "1.0",
+  "description": "Delay loading pages so you can focus",
+  "content_security_policy": "script-src 'self' https://*.jquery.com https://*.bootstrapcdn.com; object-src 'self'",
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "src/content_script.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "browser_action": {
+    "default_icon": "icons/browser_action_icon.png",
+    "default_title": "DelayDistraction",
+    "default_popup": "src/browser_action/browser_action.html"
+  }
+}
