@@ -1,2 +1,2 @@
 # Delay Distraction
-A Firefox extension to inject latency into page loads. This was created quickly over break with inspiration from a [y combinator](https://news.ycombinator.com/item?id=22319755) thread. Feel free to contribute ideas & issues - I'll take a look whenever I have time.
+A Firefox extension to inject latency into page loads with the goal of reducing the use of distracting websites. You can, for example, add a 5 second wait time to Facebook loads - this helps discourage the use of social media, allowing you to concentrate on your work. This was created quickly over break with inspiration from a [y combinator](https://news.ycombinator.com/item?id=22319755) thread. Feel free to contribute ideas & issues - I'll take a look whenever I have time.
